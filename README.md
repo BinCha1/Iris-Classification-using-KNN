@@ -1,37 +1,63 @@
-# Iris Classification using KNN
+## Iris Classification using KNN
 
-This project provides a clear and reproducible workflow for classifying iris flowers into three species using the K-Nearest Neighbors (KNN) algorithm.
+This project demonstrates how to classify iris flowers into three species using the K-Nearest Neighbors (KNN) algorithm. It provides a reproducible workflow for training, evaluating, and deploying a machine learning model with both a Jupyter notebook and a Streamlit web app.
 
-## Project Overview
+## Overview
 
-The objective is to predict the species of iris flowers—_Iris setosa_, _Iris versicolor_, or _Iris virginica_—based on sepal and petal measurements. The KNN algorithm is chosen for its simplicity and effectiveness on small datasets, making it ideal for this classic machine learning problem.
+The objective is to predict the species of an iris flower—Iris setosa, Iris versicolor, or Iris virginica—based on four flower measurements:
 
-## Dataset Description
+1. Sepal length
 
-- **Source:** UCI Machine Learning Repository (Iris Dataset)
-- **Samples:** 150
-- **Features:**
-  - Sepal length (cm)
-  - Sepal width (cm)
-  - Petal length (cm)
-  - Petal width (cm)
-- **Labels:**
-  - Iris setosa
-  - Iris versicolor
-  - Iris virginica
+2. Sepal width
 
-## Setup & Installation
+3. Petal length
 
-1. **Clone the repository:**
-   `bash
-    git clone https://github.com/yourcompany/Iris-Classification-using-KNN.git
-    cd Iris-Classification-using-KNN
-    `
-2. **Install dependencies:**
-   `bash
-    pip install -r requirements.txt
-    `
+4. Petal width
 
-## Results & Evaluation
+The Iris dataset is a well-known benchmark in machine learning. KNN was chosen for its simplicity and strong performance on small, structured datasets.
 
-The KNN model achieves high classification accuracy on the Iris dataset. Detailed metrics, confusion matrix, and plots are available in the results section of the notebook for further analysis.
+## Dataset
+
+- Source: UCI Machine Learning Repository – Iris Dataset
+
+- Samples: 150
+
+- Features: 4 numerical attributes (sepal and petal dimensions)
+
+## Classes: 3 species
+
+- Iris setosa
+
+- Iris versicolor
+
+- Iris virginica
+
+## Streamlit UI
+
+![Streamlit UI](iris_knn_ui1.png)
+![Streamlit Prediction UI](iris_knn_prediction_ui2.png)
+
+## Project Structure
+
+Iris-Classification-using-KNN/
+│
+├── app.py # Streamlit app
+├── iris_classification.ipynb # Jupyter notebook with training & evaluation
+├── knn_iris_model.pkl # Trained KNN model
+├── scaler_iris.pkl # Scaler for preprocessing
+├── requirements.txt # Dependencies
+├── iris_knn_ui1.png # Streamlit app UI screenshot
+└── iris_knn_prediction_ui2.png
+└── README.md # Project documentation
+
+## Installation
+
+Clone the repository and install dependencies:
+
+git clone https://github.com/yourcompany/Iris-Classification-using-KNN.git
+cd Iris-Classification-using-KNN
+pip install -r requirements.txt
+
+## Results
+
+The KNN classifier achieves strong accuracy on the Iris dataset.
