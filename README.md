@@ -54,7 +54,7 @@ Iris-Classification-using-KNN/
 
 Clone the repository and install dependencies:
 
-git clone https://github.com/yourcompany/Iris-Classification-using-KNN.git
+git clone https://github.com/BinCha1/Iris-Classification-using-KNN.git
 cd Iris-Classification-using-KNN
 pip install -r requirements.txt
 
